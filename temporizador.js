@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", pedirTiempo)
 
 function pedirTiempo(){
     
-    tiempo = prompt("cuanto tiempo queres que te cuente vieja")
+    tiempo = prompt("¿cuantos minutos contamos?")
     if(isNaN(tiempo) || tiempo.length > 2 || tiempo === ""){
         alert("debe ser un numero de 2 cifras como maximo")
         location.reload()
