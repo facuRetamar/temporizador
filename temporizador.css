@@ -1,0 +1,77 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Courier New', Courier, monospace;
+   
+}
+.main{
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    place-content: center;
+    background: linear-gradient(to right bottom,rgb(195, 108, 9), rgb(129, 117, 5))
+}
+.container{
+    display: flex;
+    gap: 2em;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 30px;
+    width: 500px;
+    height: 500px;
+    background: linear-gradient(to right, rgba(255,255,255,.3),rgba(255,255,255,.6) );
+    backdrop-filter: blur(10px);
+}
+.tiempo{
+    font-size: 4rem;
+    font-weight: bolder;
+    text-shadow: rgb(109, 98, 98) 2px 1px;
+    color:rgb(41, 28, 28)
+}
+.contenedor_botones{
+    display: flex;
+    gap: 2em;
+    justify-content: center;
+    align-items: center;
+}
+.container_tiempo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.boton{
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    font-size: 1.5rem;
+    font-weight: 900;
+    color: white;
+    cursor: pointer;
+    transition: .2s
+}
+.boton:hover{
+    transform: scale(1.05);
+    box-shadow: 4px -1px 27px -3px rgba(26,24,26,1);
+}
+.comenzar{
+    background: rgb(107, 10, 197);
+}
+.frenar{
+    background: rgb(179, 4, 4);
+}
+.resetear{
+    background: rgb(1, 151, 34);
+    font-size: 1rem;
+}
+.disabled{
+    pointer-events: none;
+    transform: scale(1.05);
+    box-shadow: 4px -1px 27px -3px rgba(26,24,26,1);
+}
